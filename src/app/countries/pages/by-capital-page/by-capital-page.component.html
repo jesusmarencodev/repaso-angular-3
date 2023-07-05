@@ -3,8 +3,8 @@
 <div class="row">
   <div class="col">
     <shared-search-box
-      (onValue)="searchByCapital($event)"
-      placeholder="Find by Capital"
+    placeholder="Find by Capital"
+    (onDebounce)="searchByCapital($event)"
     ></shared-search-box>
   </div>
 </div>
@@ -14,3 +14,4 @@
     <country-table [countries]="countries"></country-table>
   </div>
 </div>
+<!-- (onValue)="searchByCapital($event)" -->
