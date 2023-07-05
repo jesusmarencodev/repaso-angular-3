@@ -5,6 +5,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
 import { HomePageComponent } from './pages/home-page/home-page.component';
 import { RouterModule } from '@angular/router';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { SearchBoxComponent } from './components/search-box/search-box.component';
+import { LoaderComponent } from './components/loader/loader.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +14,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     AboutPageComponent,
     SidebarComponent,
     ContactPageComponent,
+    SearchBoxComponent,
+    LoaderComponent,
   ],
   imports: [CommonModule, RouterModule],
   exports: [
@@ -19,6 +23,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     ContactPageComponent,
     HomePageComponent,
     SidebarComponent,
+    SearchBoxComponent,
+    LoaderComponent
   ],
 })
 export class SharedModule {}
