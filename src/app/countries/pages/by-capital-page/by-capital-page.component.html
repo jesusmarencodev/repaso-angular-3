@@ -3,8 +3,9 @@
 <div class="row">
   <div class="col">
     <shared-search-box
-    placeholder="Find by Capital"
-    (onDebounce)="searchByCapital($event)"
+      placeholder="Find by Capital"
+      (onDebounce)="searchByCapital($event)"
+      [initialValue]="initialValue"
     ></shared-search-box>
   </div>
 </div>
